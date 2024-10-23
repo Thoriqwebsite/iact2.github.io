@@ -1,0 +1,298 @@
+body{
+   
+    overflow-x: hidden;
+}
+.navbar li a{
+   
+    color: white;
+}
+
+.navbar ul li{
+    margin-left: 2.5rem;
+    
+ 
+}
+
+.navbar ul li a:hover{
+    color: white;
+    border-bottom: 2px solid #e78760;
+    transform: scale(1);
+}
+
+.program1{
+    transition: .4s ;
+}
+
+.program1:hover{
+transform: scale(1.1);
+}
+
+
+.btn{
+    transition: .5s;
+    --bs-btn-border-color: #e78760;
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+}
+
+
+.artikel{
+    width:100%;
+   
+}
+
+.kartu{
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+ overflow-y: hidden;
+    height: auto;
+  width: 100% ;
+  margin-bottom: 100px;
+ 
+ 
+
+}
+
+.scrollkartu{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1100px;
+   
+    box-sizing: border-box;
+    scrollbar-color: red;
+}
+
+.kotak1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  padding: 0;
+    border-radius: 5px;
+    height: 90vh;
+    width: 30%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px 2px grey;
+}
+
+.artikel .kotak1 img{
+    
+    width: 150%;
+    height: 60%;
+    
+}
+
+.artikel .kotak2 img{
+    
+    width: 150%;
+    height: 60%;
+    
+}
+
+.artikel .kotak3 img{
+    
+    width: 150%;
+    height: 60%;
+    
+}
+.card{
+    box-shadow: 0px 0px 10px 0px grey;
+    transition: .5s;
+}
+
+
+.garis{
+    background-color: rgba(251, 251, 251, 0.5);
+    width: 500px;
+    height: 1px;
+    margin-top: auto;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 30px 0px grey;
+}
+
+.tombolMateri{
+    margin: auto;
+    margin-top: 50px;
+    width: 20%;
+    height: 50px;
+    border-radius: 5px;
+  border: 1.5px solid #e78760;
+   display: flex;
+   justify-content: center;
+  
+}
+
+.tombolMateri a{
+    margin-top: 10px;
+    color: #e78760;
+    font-weight: bold;
+}
+
+.PTrainer{
+    width: 90%;
+    height: auto;
+    padding-top: 200px;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+    padding-bottom: 50px;
+    display: wrap;
+
+}
+
+.PTrainer .kotak{
+    width:20%;
+    height: 400px;
+    background-color: aqua;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url(img/avatar1.png);
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 20px 0px grey;
+    transition: .3s;
+    
+}
+
+.PTrainer .kotak:hover{
+box-shadow: 0px 0px 30px 0px #e78760 ;
+
+}
+
+.PTrainer .kotak:hover .teks{
+    background-color: rgb(255, 158, 40);
+
+}
+
+.PTrainer .kotak:hover .teks .teksTrainer .garis2{
+    background-color: white;
+}
+.PTrainer .kotak .teks{
+    height: 80%;
+    width: 160%;
+    background-color: white;
+    margin-top: 110%;
+    transform: rotate(-15deg);
+    transition: .3s;
+    overflow: hidden;
+   
+}
+
+.PTrainer .kotak .teks .teksTrainer{
+    width: 50%;
+    height: 40%;
+ 
+    box-sizing: border-box;
+    transform: rotate(15deg);
+   position: absolute;
+   margin-left: 100px;
+   margin-top: 20px;
+  padding-left: 50px;
+
+}
+
+.PTrainer .kotak .teks .teksTrainer .garis2{
+    background-color: rgb(255, 158, 40) ;
+    width: 63px;
+    height: 3px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+
+}
+
+
+
+.PTrainer .kotak .teks .teksTrainer img:nth-child(1){
+    width: 30px;
+}
+.PTrainer .kotak .teks .teksTrainer img:nth-child(2){
+    width: 20px;
+    padding-top: 10px;
+}
+
+.PTrainer .kotak .teks .teksTrainer img:nth-child(3){
+    width: 30px;
+}
+
+.PTrainer .kotak .teks .teksTrainer .namaTrainer{
+   margin-left: -30px;
+   margin-top: 20px;
+   font-weight: 560;
+}
+
+.PTrainer .kotak .teks .teksTrainer .jabatan{
+font-weight: 300;
+font-size: 15px;
+margin-left: 10px;
+}
+
+.trainer h2{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: -90px;
+}
+
+/* Tablet */
+
+@media (max-width: 768px){
+    .logo{
+        display: none;
+    }
+.PTrainer{
+    display: wrap;
+    overflow-x: scroll;
+    width: 1120px;
+}
+.PTrainer .kotak .teks{
+    height: 80%;
+    width: 160%;
+    background-color: white;
+    margin-top: 115%;
+    transform: rotate(-15deg);
+    transition: .3s;
+    overflow: hidden;
+   
+}
+   
+
+    .PTrainer .kotak{
+        width: 20%;
+    }
+   
+
+.PTrainer .kotak .teks .teksTrainer{
+    width: 50%;
+    height: 40%;
+ 
+    box-sizing: border-box;
+    transform: rotate(15deg);
+   position: absolute;
+   margin-left: 100px;
+   margin-top: 20px;
+  padding-left: 50px;
+
+}
+.trainer{
+    width: 100%;
+    overflow-x: scroll;
+}
+}
+
+
+@media (max-width:576px){
+   .logo{
+    display: inline-block;
+   }
+.navbar{
+
+    transform: scale(-2);
+}
+}
