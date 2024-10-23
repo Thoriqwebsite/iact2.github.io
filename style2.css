@@ -153,7 +153,7 @@ transform: scale(1.1);
     border-radius: 15px;
     box-sizing: border-box;
     overflow: hidden;
-    background-image: url(img/avatar1.png);
+    background-image: url(avatar1.png);
     background-repeat: no-repeat;
     box-shadow: 0px 0px 20px 0px grey;
     transition: .3s;
